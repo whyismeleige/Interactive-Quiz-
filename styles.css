@@ -10,6 +10,8 @@
     justify-content: center;
     background-color: black;
     color: white;
+    height: 7.5vh;
+    font-size: 2vw;
 }
 
 main{
@@ -17,7 +19,7 @@ main{
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: linear-gradient(180deg,rgb(164, 47, 194),rgba(6, 3, 199, 0.938));
+    background: linear-gradient(180deg,rgb(8, 115, 255),rgba(6, 3, 199, 0.938));
 }
 
 footer{
@@ -26,6 +28,8 @@ footer{
     justify-content: center;
     background-color: black;
     color: white;
+    height: 10vh;
+    font-size: 2vw;
 }
 
 footer a{
@@ -35,28 +39,36 @@ footer a{
 
 .container{
     border: 10px solid black;
-    background-color: transparent;
+    border-radius: 20px;
+    background-color: white;
 }
 
 .question-box{
     display: flex;
     align-items: center;
-    justify-content: center;
-    height: 10vh;
+    justify-content:center;
+    height: 15vh;
     width: 30vw;
-    background-color: red;
-    color: white;
+    margin: 30px;
 }
 
 .options{
-    border-radius: 10%;
+    border: 2px solid black;
+    margin: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: green;
-    color: white;
-    height: 10vh;
+    height: 5vh;
     width: 30vw;
+    border-radius: 20px;
+    font-size: 1.5vw;
+}
+
+.options:hover{
+    background-color: black;
+    color: white;
+    box-shadow: 0px 6px 12px 0px #0009;
+    transform: scale(1.05);
 }
 
 .buttons-box{
@@ -64,12 +76,37 @@ footer a{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 20px;
 }
 
 .question-text{
     font-size: 2vw;
 }
 
-.options-text{
+
+
+.buttons{
+    width: 5vw;
+    margin: 10px;
+    border: 2px solid black;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
     font-size: 1.5vw;
+    padding: 10px;
+}
+
+.buttons:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 6px 12px 0px #0009;
+}
+
+.correct-option{
+    background-color: rgba(85, 252, 85, 0.904);
+    pointer-events: "none";
+}
+
+.wrong-option{
+    background-color: rgba(247, 88, 88, 0.829);
+    pointer-events: "none";
 }
